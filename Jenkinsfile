@@ -3,14 +3,18 @@ node {
     git branch: 'main', url: 'https://github.com/DivyaMeghana16/OnlineAssessmentPlatformApplication.git'
   }
  
-  stage("Compilation") {
-    sh "./mvnw clean install -DskipTests"
-  }
- 
-  stage("Tests and run") {
-    stage("Running unit tests") {
-      sh "./mvnw test -Punit"
+  
+ stage('Build project with Maven') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+ stage('Run unit tests') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+   stage("Deployment") {
+      sh 'nohup ./mvnw spring-boot:run -Dserver.port=5050 &'
     }
-    
-  }
 }
