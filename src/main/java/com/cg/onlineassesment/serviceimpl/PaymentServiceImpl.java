@@ -38,6 +38,7 @@ public class PaymentServiceImpl implements PaymentService{
 		// TODO Auto-generated method stub
 		Payment payment = new Payment();
         payment.setPaymentid(paymentDTO.getPaymentid());
+	payment.setBookingId(paymentDto.getBookingId());
         payment.setPaymenttype(paymentDTO.getPaymenttype());
         payment.setPaymentdate(paymentDTO.getPaymentdate());
 
