@@ -24,6 +24,7 @@ public class PaymentServiceImpl implements PaymentService{
         BeanUtils.copyProperties(paymentDto, payment);
         Payment paymentSave=paymentRepository.save(payment);
         paymentDto.setPaymentid(paymentSave.getPaymentid());
+        payment.setBookingId(paymentDto.getBookingId());
         payment.setPaymenttype(paymentDto.getPaymenttype());
         payment.setPaymentdate(paymentDto.getPaymentdate());
         return paymentDto;
