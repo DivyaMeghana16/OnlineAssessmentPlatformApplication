@@ -11,6 +11,7 @@
 	<groupId>com.cg</groupId>
 	<artifactId>MatrimonyApplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>MatrimonyApplication</name>
 	<description>Matrimony Application Backend</description>
 	<properties>
