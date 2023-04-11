@@ -4,6 +4,7 @@ public class PaymentDTO {
 	private int paymentid;
     private String paymenttype;
     private String paymentdate;
+    private int bookingId;
     
     public int getPaymentid() {
         return paymentid;
@@ -24,6 +25,12 @@ public class PaymentDTO {
 	public void setPaymenttype(String paymenttype) {
 		this.paymenttype = paymenttype;
 	}
-    
+    public int getBookingId() {
+		return bookingId;
+	}
+	public void setBookingId(int bookingId) {
+		this.bookingId = bookingId;
+	}
+	
 
 }
