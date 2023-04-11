@@ -4,12 +4,12 @@ node {
   }
  
   stage("Compilation") {
-    bat "./mvnw clean install -DskipTests"
+    sh "./mvnw clean install -DskipTests"
   }
  
   stage("Tests and run") {
     stage("Running unit tests") {
-      bat "./mvnw test -Punit"
+      sh "./mvnw test -Punit"
     }
     
   }
