@@ -3,12 +3,7 @@ node {
     git branch: 'main', url: 'https://github.com/DivyaMeghana16/OnlineAssessmentPlatformApplication.git'
   }
  
-  
- stage('Build project with Maven') {
-            steps {
-                sh 'mvn clean package'
-            }
-        }
+ 
  stage('Run unit tests') {
             steps {
                 sh 'mvn test'
