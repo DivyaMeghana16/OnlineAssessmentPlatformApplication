@@ -31,6 +31,6 @@ public class PaymentDTO {
 	public void setBookingId(int bookingId) {
 		this.bookingId = bookingId;
 	}
-	
+public getBookingid(){}
 
 }
