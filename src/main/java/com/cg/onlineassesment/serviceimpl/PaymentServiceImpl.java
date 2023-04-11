@@ -24,7 +24,7 @@ public class PaymentServiceImpl implements PaymentService{
         BeanUtils.copyProperties(paymentDto, payment);
         Payment paymentSave=paymentRepository.save(payment);
         paymentDto.setPaymentid(paymentSave.getPaymentid());
-        payment.setBookingId(paymentDto.getBookingId());
+        payment.setBookingid(paymentDto.getBookingid());
         payment.setPaymenttype(paymentDto.getPaymenttype());
         payment.setPaymentdate(paymentDto.getPaymentdate());
         return paymentDto;
@@ -38,7 +38,7 @@ public class PaymentServiceImpl implements PaymentService{
 		// TODO Auto-generated method stub
 		Payment payment = new Payment();
         payment.setPaymentid(paymentDTO.getPaymentid());
-	payment.setBookingId(paymentDto.getBookingId());
+	payment.setBookingid(paymentDto.getBookingid());
         payment.setPaymenttype(paymentDTO.getPaymenttype());
         payment.setPaymentdate(paymentDTO.getPaymentdate());
 
