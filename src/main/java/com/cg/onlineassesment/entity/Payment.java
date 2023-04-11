@@ -11,6 +11,8 @@ public class Payment {
     private int paymentid;
     private String  paymenttype;
     private String paymentdate;
+    private int bookingId;
+
 
 
     public int getPaymentid() {
@@ -32,11 +34,11 @@ public class Payment {
 	public void setPaymenttype(String paymenttype) {
 		this.paymenttype = paymenttype;
 	}
-	
-	@Override
-	public String toString() {
-		return "Payment [paymentid=" + paymentid + ", paymenttype=" + paymenttype + ", paymentdate=" + paymentdate
-				+ "]";
+	public int getBookingId() {
+		return bookingId;
+	}
+	public void setBookingId(int bookingId) {
+		this.bookingId = bookingId;
 	}
     
     
