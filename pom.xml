@@ -12,8 +12,8 @@
 	<artifactId>MatrimonyApplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>MatrimonyApplication</name>
-	<description>Matrimony Application Backend</description>
+	<name>Online Assessment Platform Application </name>
+	<description>Online Assessment Platform Application</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
